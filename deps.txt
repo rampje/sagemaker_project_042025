@@ -1,0 +1,7 @@
+pip install streamlit
+pip install jq
+pip install openpyxl
+pip install "faiss-cpu"
+pip install langchain
+
+https://aws.amazon.com/blogs/machine-learning/build-your-gen-ai-based-text-to-sql-application-using-rag-powered-by-amazon-bedrock-claude-3-sonnet-and-amazon-titan-for-embedding/
