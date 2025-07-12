@@ -1,0 +1,73 @@
+{
+
+  "tables": [
+
+    {
+
+      "name": "demo_db.projects",
+
+      "schema": "CREATE TABLE IF NOT EXISTS projects (project_id INTEGER PRIMARY KEY, project_title TEXT, initial_award_fiscal_year INTEGER, funding_amount DECIMAL);",
+
+      "description": "This table stores information about research projects",
+
+      "columns": [
+
+        {
+
+          "name": "project_id",
+
+          "description": "unique identifier for projects",
+
+          "synonyms": ["project id"]
+
+        },
+
+        {
+
+          "name": "project_title",
+
+          "description": "title of the project",
+
+          "synonyms": ["project name"]
+
+        },
+
+        {
+
+          "name": "initial_award_fiscal_year",
+
+          "description": "the fiscal year the project was awarded",
+
+          "synonyms": ["award fiscal year", "award year"]
+
+        },
+
+                             {
+
+          "name": "funding_amount",
+
+          "description": "the dollar amount of funding the project received",
+
+          "synonyms": ["project funding", "funding", "budget", "award amount"]
+
+        }
+
+      ],
+
+      "sample_queries": [
+
+        {
+
+          "query": "SELECT COUNT(project_id) AS number_of_projects from projects WHERE initial_award_fiscal_year = 2020",
+
+          "user_input": "Count of projects that were awarded in fiscal year 2020"
+
+        }
+
+      ]
+
+    }
+
+              ]
+
+}
